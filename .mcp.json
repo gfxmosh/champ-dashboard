@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "shadcn": {
+      "command": "npx",
+      "args": ["--no-install", "shadcn", "mcp"]
+    }
+  }
+}
