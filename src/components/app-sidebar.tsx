@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/sidebar"
 import {
   BarChart3Icon,
+  FolderKanbanIcon,
   LayoutDashboardIcon,
   Settings2Icon,
   TrophyIcon,
@@ -39,8 +40,11 @@ const data = {
       title: "Overview",
       url: "/dashboard",
       icon: <LayoutDashboardIcon />,
-      isActive: true,
-      items: [{ title: "Summary", url: "/dashboard" }],
+    },
+    {
+      title: "Projects",
+      url: "/dashboard/projects",
+      icon: <FolderKanbanIcon />,
     },
     {
       title: "Customers",

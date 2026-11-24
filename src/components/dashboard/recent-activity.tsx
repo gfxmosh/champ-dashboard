@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import { initials } from "@/lib/format"
 import { recentActivity, type ActivityKind } from "@/lib/mock-data"
 
 const kindLabel: Record<ActivityKind, string> = {
@@ -34,16 +35,6 @@ const currency = new Intl.NumberFormat("en-US", {
   maximumFractionDigits: 0,
   signDisplay: "exceptZero",
 })
-
-function initials(name: string) {
-  return name
-    .split(/\s+/)
-    .filter((word) => /^[A-Za-z]/.test(word))
-    .slice(0, 2)
-    .map((word) => word[0])
-    .join("")
-    .toUpperCase()
-}
 
 export function RecentActivity() {
   return (
